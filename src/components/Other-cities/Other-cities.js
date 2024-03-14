@@ -33,7 +33,7 @@ const OtherCities = () => {
   const requestWeatherOtherCities = React.useCallback(async (valueSearch) => {
     try {
       const location = await axios.get(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${valueSearch}&appid=553d2fd2f52245cdd55820f316fc1c80`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${valueSearch}&appid=553d2fd2f52245cdd55820f316fc1c80`
       );
 
       const geoCoordinate1 = location.data[0].lat;
