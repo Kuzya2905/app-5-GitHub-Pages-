@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.eb583023.css",
+    "main.js": "/react-gh-pages/static/js/main.27dfdeee.js",
+    "static/media/Satoshi-Medium.woff2": "/react-gh-pages/static/media/Satoshi-Medium.1ffe968245568e8ba1e7.woff2",
+    "static/media/card-basic-sunset.svg": "/react-gh-pages/static/media/card-basic-sunset.d47ef29d596a04d4bf7a5d1e1ea6b8ec.svg",
+    "static/media/card-basic-sunrise.svg": "/react-gh-pages/static/media/card-basic-sunrise.d9acb9b6a5dc706f68175f08931543ea.svg",
+    "static/media/header-search.svg": "/react-gh-pages/static/media/header-search.6aa856720ef59b64eacc444e6c909acd.svg",
+    "static/media/prev-city.svg": "/react-gh-pages/static/media/prev-city.79094444300aeac82d4d33ec6a8fc001.svg",
+    "static/media/next-city.svg": "/react-gh-pages/static/media/next-city.9dec4f302f94fbff9a3b9aab36060e15.svg",
+    "static/media/location.svg": "/react-gh-pages/static/media/location.e9da06bc2f39a64cb670a719a8685448.svg",
+    "index.html": "/react-gh-pages/index.html",
+    "static/media/pointer.svg": "/react-gh-pages/static/media/pointer.3841cd0df3b594b47d8f28e6e4f3fe0d.svg",
+    "main.eb583023.css.map": "/react-gh-pages/static/css/main.eb583023.css.map",
+    "main.27dfdeee.js.map": "/react-gh-pages/static/js/main.27dfdeee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb583023.css",
+    "static/js/main.27dfdeee.js"
+  ]
+}
