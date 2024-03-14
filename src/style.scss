@@ -1,0 +1,401 @@
+@font-face {
+font-family: 'Satoshi-Medium';
+src: url('../public/Fonts/Satoshi-Medium.woff2') format('woff2');
+font-weight: 500;
+font-display: swap;
+font-style: normal;
+}
+* {
+font-family: 'Satoshi-Medium';
+font-weight: 500;
+font-display: swap;
+font-style: normal;
+}
+body {
+padding: 0;
+margin: 0;
+}
+.App {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-panel {
+  box-sizing: border-box;
+  max-width: 410px;
+  padding: 43px 36px;
+  background-color: #1A77F2;
+  margin: 0 auto;
+  .top {
+    .city {
+      gap: 8px;
+      margin-bottom: 12px;
+      .svgLocation {
+        height: 18px;
+        padding-top: 8px;
+        float: left;
+        margin-right: 10px;
+      }
+      span {
+        color: rgb(255, 255, 255);
+        font-size: 28px;
+      }
+    }
+    .date {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 20px;
+    }
+    .time {
+      margin-top: 10px;
+      box-sizing: border-box;
+      width: 150px;
+      height: 55px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.2);
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px;
+    }
+  }
+  .card-basic {
+    .card-top {
+      max-width: 338px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      margin-top: 56px;
+      justify-content: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      .temperature {
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-size: 90px;
+      font-weight: 400;
+      margin-bottom: 50px;
+      }
+    }
+    .main-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 0;
+      padding: 30px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      .info {
+        box-sizing: border-box;
+        width: 338px;
+        height: 55px;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.2);
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+      }
+    }
+    .bot-info {
+      margin: 32px auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      .info {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        padding: 15px;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.2);
+        .sunrise {
+          color: rgb(255, 255, 255);
+          font-size: 24px;
+        }
+        .time {
+          color: rgba(255, 255, 255, 0.5);
+          font-size: 18px;
+        }
+        .sunset {
+          color: rgb(255, 255, 255);
+          font-size: 24px;
+        }
+        .time {
+          color: rgba(255, 255, 255, 0.5);
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+main {
+  padding: 32px 34px;
+  max-width: 1030px;
+  box-sizing: border-box;
+  margin:0 auto ;
+}
+header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  padding-bottom: 24px;
+  .data {
+    width: 485px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .data-1 {
+      color: rgba(11, 9, 40, 0.9);
+      font-size: 36px;
+      text-align: center;
+    }
+    .data-2 {
+      margin-top: 10px;
+      color: rgba(11, 9, 40, 0.5);
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  .search-panel {
+    width: 399px;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 18px 20px 18px 20px;
+    border: 1px solid rgb(247, 246, 249);
+    border-radius: 100px;
+    background: rgb(250, 250, 250);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    svg {
+      cursor: pointer;
+      padding: 8px;
+      border: 1px solid black;
+      border-radius: 5px;
+      &:hover {
+        padding: 8px;
+        border-radius: 5px;
+        background-color: #408ef3;
+      }
+    }
+    .search {
+      height: 35px;
+      margin-left: 11px;
+      padding-left: 5px;
+      width: 100%;
+      border: none;
+      font-size: 26px;
+      background: rgb(250, 250, 250);
+      
+    }
+    .search::placeholder {
+      color: rgba(28, 28, 28, 0.5);
+    }
+  }
+}
+.section-1 {
+  padding-top: 40px;
+  .filter {
+    max-width: 956px;
+    border-radius: 100px;
+    background: rgb(250, 250, 250);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    button {
+      width: 313.33px;
+      height: 55px;
+      background: rgb(250, 250, 250);
+      border-radius: 100px;
+      font-size: 20px;
+      border: none;
+    }
+    button:hover {
+      background: rgb(21, 46, 76);
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      transition: 0.4s;
+    }
+    button.active {
+      background: rgb(21, 46, 76);
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      transition: 0.4s;
+    }
+  }
+}
+.section-2 {
+  position: relative;
+  max-width: 100%;
+  @media(max-width:1048px) {
+    .next {
+      display: none;
+    }
+  }
+  .next {
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    right: -50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    svg {
+      width: 70px;
+      height: 70px;
+    }
+    svg:hover {
+      & path {
+        transition: 0.5s;
+        fill: rgb(21, 46, 76)
+      }
+    }
+  }
+  @media(max-width:1048px) {
+    .prev {
+      display: none;
+    }
+  }
+  .prev {
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    left: -50px;
+    top: 150px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    svg {
+      width: 70px;
+      height: 70px;
+      transform: scale(-1, -1)
+    }
+    svg:hover {
+      width: 70px;
+      height: 70px;
+      & path {
+        transition: 0.5s;
+        fill: rgb(21, 46, 76)
+      }
+    }
+  }
+  @media(max-width:1048px) {
+    .cards {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .cards {
+    padding: 20px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    margin-top: 40px;
+    display: flex;
+    gap: 32px;
+    position: relative;
+    .card {
+      width: 181px;
+      height: 328.12px;
+      padding: 40px 20px 40px 20px;
+      border-radius: 1000px;
+      background: rgb(250, 250, 250);
+      display: flex;
+      flex-direction: column;
+      h1 {
+        text-align: center;
+        padding-bottom: 10px;
+        margin: 0;
+      }
+      .temperature {
+        width: 141px;
+        height: 70px;
+        font-size: 52px;
+        color: rgb(28, 28, 28);
+        text-align: center;
+        width: 100%;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+@media(max-width:1048px) {
+  .section-3 {
+    .top {
+      justify-content: center;
+    }
+    
+  }
+}
+.section-3 { 
+  .top {
+    display: flex;
+    h1 {
+      max-width: 888px;
+    }
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      svg:hover {
+        path {
+          fill-opacity: 1;
+        }
+      }
+    }
+  }
+  @media(max-width:1048px) {
+    .other-cities {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .other-cities {
+    display: flex;
+    gap: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+    max-width: 850px;
+    .card {
+      min-width: 407px;
+      height: 164.12px;
+      padding: 20px 30px;
+      border-radius: 32px;
+      background: rgb(248, 248, 248);
+      box-sizing: border-box;
+      .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .name-weather {
+          display: flex;
+          flex-direction: column;
+          .name {
+            color: rgb(11, 9, 40);
+            font-size: 30px;
+          }
+          .weather {
+            color: rgba(11, 9, 40, 0.5);
+            font-size: 20px;
+            margin-top: 10px;
+          }
+        }
+      }
+      img {
+        width: 140px;
+      }
+      .temperature {
+        font-size: 52px;
+      }
+    }
+  }
+}
+
