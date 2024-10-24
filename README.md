@@ -1,4 +1,4 @@
-# Приложение погоды c deploy
+# Приложение погоды (deploy)
 https://kuzya2905.github.io/app-5-GitHub-Pages-/
 
 # Getting Started with Create React App
